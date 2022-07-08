@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>web_java_ASM3</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  <!-- serVlet of Log -->
+   <servlet>
+		<servlet-name>Login</servlet-name> 
+		<servlet-class>Model.severLet_Login</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/Login</url-pattern>
+	</servlet-mapping>
+ <!-- serVlet of Log -->
+ 
+  <!-- serVlet of /Home -->
+   <servlet>
+		<servlet-name>Home</servlet-name> 
+		<servlet-class>Model.serVlet_Home</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Home</servlet-name>
+		<url-pattern>/Home</url-pattern>
+	</servlet-mapping>
+ <!-- serVlet of Log -->
+ 
+ <!-- serVlet of /informationProductController -->
+   <servlet>
+		<servlet-name>informationProductController</servlet-name> 
+		<servlet-class>controller.informationProductController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>informationProductController</servlet-name>
+		<url-pattern>/informationProductController</url-pattern>
+	</servlet-mapping>
+ <!-- serVlet of /informationProductController -->
+ 
+ <!-- serVlet of  AddToCart -->
+   <servlet>
+		<servlet-name>AddToCart</servlet-name> 
+		<servlet-class>controller.AddToCart</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AddToCart</servlet-name>
+		<url-pattern>/AddToCart</url-pattern>
+	</servlet-mapping>
+ <!-- serVlet of  AddToCart -->
+ 
+ <!-- serVlet of submitOrder -->
+   <servlet>
+		<servlet-name>submitOrder</servlet-name> 
+		<servlet-class>controller.submitOrder</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>submitOrder</servlet-name>
+		<url-pattern>/submitOrder</url-pattern>
+	</servlet-mapping>
+ <!-- serVlet of submitOrder-->
+ 
+ 
+	<context-param>
+	<param-name>userName1</param-name>
+	<param-value>tinh</param-value>
+	</context-param>
+	
+	<context-param>
+	<param-name>passWord1</param-name>
+	<param-value>123</param-value>
+	</context-param>
+	
+	<session-config>
+		<session-timeout>
+			5000
+		</session-timeout>
+	</session-config>
+</web-app>
