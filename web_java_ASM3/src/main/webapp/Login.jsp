@@ -10,7 +10,7 @@
 
 </head>
 <body>
-	<h1>tinhnguysdf123123sấdsa/h1>
+	<h1>tinhnguysdf123123sấdádsadsa/h1>
 	<script>
 		function validateForm() {
 			let x = document.forms["myForm"]["userName"].value;
